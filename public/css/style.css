@@ -1,0 +1,36 @@
+* {
+    margin: 5px;
+    font-size: 20px;
+  }
+  .box {
+    height: wrap;
+    width: 50%;
+    margin-left: 25%;
+    background-color: aliceblue;
+    border: 2px solid red;
+  }
+  input {
+    width: 80%;
+    height: 30px;
+  }
+  button {
+    width: 90%;
+    margin-top: 10px;
+    height: 40px;
+    color: red;
+    background-color: white;
+  }
+  button:hover {
+    background-color: gray;
+  }
+  .boxx {
+    width: 90%;
+  }
+  .deleteBtn {
+    width: fit-content;
+    height: fit-content;
+  }
+  .editBtn {
+    width: fit-content;
+    height: fit-content;
+  }

@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a call back</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+  <div class="box">
+    <h2 style="color: orange">Request for a call back.</h2>
+    <br />
+    <h4>Please Fill up the form so we can contact you</h4>
+    <br>
+    <hr />
+    <form class="pure-form" action="/added" method="POST">
+      Name:
+      <br />
+      <input type="text" id="name"name="name" required />
+      <br />
+      Email-id:
+      <br />
+      <input type="text" id="email"name="email" required />
+      <br />
+      Phone-No:
+      <br />
+      <input type="text" id="phone"name="phone" required />
+      <br />
+      <button type="submit"><b>Submit.</b></button>
+    </form>
+    <div class="boxx">
+      <% rows.forEach((row) => { %>
+        <p>ID: <%= row.id %> - Phone: <%= row.phone %> - Name: <%= row.name %>  - Gmail: <%= row.email %></p>
+        <a href="/delete/<%= row.id %>" class="btn" >Delete</a>
+      <% }); %>
+    </div>
+  </div>
+</body>
+</html>
